@@ -1,3 +1,10 @@
+zookeeper.out
+# Mobile Tools for Java (J2ME)
+out/
+.idea/
+target/
+*.iml
+
 # Compiled class file
 *.class
 
