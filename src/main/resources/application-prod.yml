@@ -1,0 +1,6 @@
+server:
+  context-path: /demo
+  port: 8081
+
+
+mobileNumber: 17621216867
