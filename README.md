@@ -14,3 +14,17 @@ springboot demo
  @PathVariable | 获取url中的数据
  @RequestParam | 获取请求参数的值(GET和POST)
  @GetMapping | 组合注解
+ 
+ 
+ 
+- 表单验证@Valid @min  BindingResult
+- 将request,response串起来.
+- form-data,x-www-form-urlencoded,raw
+
+```
+{
+    "cupSize":1,
+    "age":20,
+    "money":2000
+}
+```
