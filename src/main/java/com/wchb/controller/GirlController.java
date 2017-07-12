@@ -2,6 +2,7 @@ package com.wchb.controller;
 
 import com.wchb.domain.Girl;
 import com.wchb.domain.HttpResult;
+import com.wchb.utils.HttpResultUtil;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,9 +22,8 @@ public class GirlController {
     @PostMapping(value = "/add")
     public HttpResult<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return new HttpResult<>(400, bindingResult.getFieldError().getDefaultMessage(), null);
+            return HttpResultUtil.error(400, bindingResult.getFieldError().getDefaultMessage());
         }
-
-        return new HttpResult<>(200, null, girl);
+        return HttpResultUtil.success(girl);
     }
 }

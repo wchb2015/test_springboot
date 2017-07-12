@@ -15,7 +15,10 @@ public class HelloController {
     private String mobileNumber;
 
     @RequestMapping(value = {"hi", "hello"}, method = RequestMethod.GET)
-    public String say() {
+    public String say() throws Exception {
+        if (true) {
+            throw new Exception("haha异常啊!");
+        }
         return "hello spring boot!!!" + mobileNumber;
 //        return "index";
     }
