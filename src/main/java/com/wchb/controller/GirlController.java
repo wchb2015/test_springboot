@@ -14,11 +14,6 @@ import javax.validation.Valid;
 @RequestMapping("/girl")
 public class GirlController {
 
-    /**
-     * 添加一个女生
-     *
-     * @return
-     */
     @PostMapping(value = "/add")
     public HttpResult<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
