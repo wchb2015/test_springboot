@@ -20,6 +20,8 @@ springboot demo
 - 表单验证@Valid @min  BindingResult
 - 将request,response串起来.
 - form-data,x-www-form-urlencoded,raw
+- 单元测试,WEB单元测试.
+- mybatis
 
 ```
 {
